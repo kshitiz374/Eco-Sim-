@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useStore } from '../store/useStore';
 import { calculateEcoSim } from '../utils/simulationEngine';
-import { Zap, MapPin, DollarSign, ArrowRight, ArrowLeft, Sun } from 'lucide-react';
+import { Zap, MapPin, DollarSign, ArrowRight, ArrowLeft } from 'lucide-react';
 
 export default function Wizard() {
   const { 
@@ -43,8 +43,8 @@ export default function Wizard() {
     <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center p-4">
       
       {/* Header */}
-      <div className="absolute top-8 left-8 flex items-center gap-2 text-emerald-700 font-bold text-2xl tracking-tight">
-        <Sun className="w-8 h-8" />
+      <div className="absolute top-8 left-8 flex items-center gap-3 text-emerald-700 font-bold text-2xl tracking-tight">
+        <img src="/icon.png" alt="Eco-Sim Optimizer Logo" className="w-10 h-10" />
         Eco-Sim Optimizer
       </div>
 
